@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pendaftaran & Informasi Dokter - Hospital ODSK</title>
+  <style>
+    :root {
+      --primary: #002b5b;
+      --secondary: #00b4d8;
+      --light-bg: #f8f9fa;
+      --white: #ffffff;
+      --text: #1c1c1c;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      animation: fadeInBody 1.2s ease-in;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeDown 1s ease-in;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 40px 20px;
+      background-color: var(--white);
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      animation: fadeInUp 1.2s ease;
+    }
+
+    h2 {
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    form button {
+      margin-top: 20px;
+      background-color: var(--secondary);
+      color: var(--white);
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #009bbf;
+    }
+
+    .poli-section {
+      margin-top: 50px;
+    }
+
+    .poli-section h3 {
+      color: var(--secondary);
+      border-bottom: 2px solid var(--secondary);
+      padding-bottom: 5px;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+      animation: fadeUp 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital ODSK North Province</h1>
+    <nav>
+     <a href="beranda.html">Beranda</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+      <a href="informasi.html">Informasi Dokter</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Formulir Pendaftaran Online</h2>
+    <form>
+      <label for="nama">Nama Lengkap:</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="nik">NIK:</label>
+      <input type="text" id="nik" name="nik" required>
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" rows="3" required></textarea>
+
+      <label for="nohp">No. HP:</label>
+      <input type="text" id="nohp" name="nohp" required>
+
+      <label for="poli">Pilih Poli:</label>
+      <select id="poli" name="poli" required>
+        <option value="">-- Pilih Poli --</option>
+        <option value="-OBSTETRI & GINEKOLOGI">OBSTETRI & GINEKOLOGI</option>
+        <option value="-OBSGYN ONKOLOGI">OBSGYN ONKOLOGI</option>
+        <option value="-PEDIATRI">PEDIATRI</option>
+        <option value="-INTERNA">Poli Penyakit Dalam</option>
+        <option value="-PENYAKIT DALAM (HD)">PENYAKIT DALAM (HD)</option>
+        <option value="-GINJAL HIPERTENSI">GINJAL HIPERTENSI</option>
+        <option value="-TUMBUH KEMBANG PED. SOSIAL">TUMBUH KEMBANG PED. SOSIAL</option>
+        <option value="-Mata">Mata</option>
+        <option value="-JANTUNG DAN PEMBULUH DARAH">JANTUNG DAN PEMBULUH DARAH</option>
+        <option value="-GIZI KLINIK">GIZI KLINIK</option>
+        <option value="-THT-KL">THT-KL</option>
+        <option value="-NEUROLOGI">NEUROLOGI</option>
+      </select>
+
+      <button type="submit">Daftar Sekarang</button>
+    </form>
+
+    <div class="poli-section">
+      <h2>Daftar Dokter Berdasarkan Poliklinik</h2>
+
+      <h3>OBSTETRI & GINEKOLOGI</h3>
+      <ul>
+        <li>dr. Misje Angsu, Sp.OG</li>
+        <li>dr. Agus D.N. Kaunang, Sp.OG</li>
+        <li>dr. Flora D. Ngolo, Sp.OG</li>
+        <li>dr. James A. Rarung, Sp.OG, MM</li>
+      </ul>
+
+      <h3>OBSGYN ONKOLOGI</h3>
+      <ul>
+        <li>dr. Frank Mitchell Marvel Wagey, Sp.OG (K) Onk</li>
+      </ul>
+
+      <h3>PEDIATRI</h3>
+      <ul>
+        <li>dr. Stevie R. Rengkuan, Sp.A</li>
+        <li>dr. Fransiska L. Kaihatu,Sp.A</li>
+        <li>dr. Femmy Tambajong, Sp.A</li>
+        <li>dr. Carla J. Opit, Sp.A</li>
+      </ul>
+
+      <h3>INTERNA</h3>
+      <ul>
+        <li>dr. Ester O.V. Mawengkang, Sp.PD</li>
+        <li>dr. Novia Rusly, Sp.PD</li>
+        <li>dr. Catrien L.A Berhandus, Sp.PD</li>
+      </ul>
+
+      <h3>PENYAKIT DALAM (HD)</h3>
+      <ul>
+        <li>dr. John Walandow, Sp.PD - FINASIM</li>
+        <li>dr. Indrajit, Sp.Pd</li>
+      </ul>
+      
+      <h3>GINJAL HIPERTENSI</h3>
+      <ul>
+        <li>Prof.DR.dr.Emma Moeis,Sp.PD-KGEH</li>
+      </ul>
+
+      <h3>TUMBUH KEMBANG PED. SOSIAL</h3>
+      <ul>
+        <li>dr. Hesti Lestari, SP.A (K)</li>
+      </ul>
+
+      <h3>Mata</h3>
+      <ul>
+        <li>dr. Novanita Satolom, Sp.M</li>
+        <li>dr. Vincent Armando J. Rooroh,Sp.M</li>
+      </ul>
+
+      <h3>JANTUNG DAN PEMBULUH DARAH</h3>
+      <ul>
+        <li>dr. Andre Awaloei, Sp.JP (K)</li>
+      </ul>
+
+      <h3>GIZI KLINIK</h3>
+      <ul>
+        <li>dr. Ester Musa, M.Gizi,SpGk</li>
+      </ul>
+
+      <h3>THT-KL</h3>
+      <ul>
+        <li>dr. Ronald Frans, Sp.THT-KL</li>
+      </ul>
+
+      <h3>NEUROLOGI</h3>
+      <ul>
+        <li>dr. Lenny H. Matoke, Sp.S</li>
+        <li>dr. Moudy Lumentah, Sp.S</li>
+        <li>dr. Lisa Rizky Dalie, Sp.N, M-Kes</li>
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Hospital ODSK | Sistem Antrian Digital (NS)</p>
+  </footer>
+</body>
+</html>

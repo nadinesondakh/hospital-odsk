@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beranda - RSUD ODSK</title>
+  <style>
+    :root {
+      --primary: #002b5b;
+      --secondary: #007cc7;
+      --light: #f4f9fc;
+      --white: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light);
+      color: #1c1c1c;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--secondary);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #002b5b, #007cc7);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .button-group {
+      margin-top: 30px;
+    }
+
+    .button-group a {
+      background-color: var(--white);
+      color: var(--primary);
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .button-group a:hover {
+      background-color: var(--secondary);
+      color: white;
+    }
+
+    .about, .info-section {
+      padding: 50px 20px;
+      text-align: center;
+      background-color: white;
+      animation: fadeInUp 1s ease-in-out;
+    }
+
+    .about img {
+      max-width: 90%;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+
+    .info-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      background-color: #e6f2f9;
+    }
+
+    .info-box {
+      margin: 20px;
+      max-width: 250px;
+    }
+
+    .info-box h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    .info-box i {
+      font-size: 2rem;
+      color: var(--secondary);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+    }
+
+    /* LET'S CHAT BUTTON */
+    .chat-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007cc7;
+      color: white;
+      padding: 14px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-decoration: none;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+
+    .chat-button:hover {
+      background-color: #005fa3;
+    }
+
+    /* ANIMATION */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>ODSK North Sulawesi Utara Province Hospital</h1>
+    <nav>
+      <a href="#">Beranda</a>
+      <a href="#">Pendaftaran</a>
+      <a href="#">Informasi Dokter</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Selamat Datang di RSUD ODSK</h1>
+    <p>Kami hadir untuk melayani dengan hati, melalui teknologi yang memudahkan setiap langkah Anda di RSUD ODSK.</p>
+    <div class="button-group">
+      <a href="beranda.html">Beranda</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+      <a href="informasi.html">Informasi Dokter</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+  </section>
+
+  <section class="about">
+    <h2>Tentang RSUD ODSK</h2>
+    <img src="odsk.jpg" alt="Foto RSUD ODSK">
+    <p>
+      RSUD ODSK terletak di pusat kota Manado adalah rumah sakit tipe B milik Pemprov Sulawesi Utara,  yang
+        diresmikan 23 April 2022. Rumah sakit ini memiliki 316 tempat tidur dan layanan unggulan seperti Hemodialisa, Klinik Tumbuh Kembang Anak,
+        serta sistem digital yang memudahkan proses pendaftaran dan informasi dokter. Serta dilengkapi dengan fasilitas moderen dan sumber daya manusia profesional untuk menjawab 
+        kebutuhan kesehatan masyarakat Sulawesi Utara
+
+      
+    </p>
+  </section>
+
+  <section class="info-section">
+    <div class="info-box">
+      <i>&#x1F4CD;</i>
+      <h3>Alamat</h3>
+      <p>Jl. Bethesda No. 77, Manado</p>
+    </div>
+    <div class="info-box">
+      <i>&#x260E;</i>
+      <h3>Kontak</h3>
+      <p>(0431)-865559</p>
+    </div>
+    <div class="info-box">
+      <i>&#x23F0;</i>
+      <h3>Jam Kunjungan</h3>
+      <p>11:00 - 12:00<br>17:00 - 18:00 WITA</p>
+    </div>
+    <div class="info-box">
+      <i>&#x2709;</i>
+      <h3>Email</h3>
+      <p>info@rsudodsk.id</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RSUD ODSK | Sistem Antrian Digital by Nadine S.</p>
+  </footer>
+
+  <a class="chat-button" href="https://wa.me/6285182728069" target="_blank">Let's Chat!</a>
+
+</body>
+</html>

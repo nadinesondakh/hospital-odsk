@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak - Hospital ODSK</title>
+  <style>
+    :root {
+      --primary: #002b5b;
+      --secondary: #00b4d8;
+      --light-bg: #f8f9fa;
+      --white: #ffffff;
+      --text: #1c1c1c;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      animation: fadeInBody 1.2s ease-in;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeDown 1s ease-in;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section.title {
+      padding: 40px 20px;
+      background: linear-gradient(to right, var(--primary), #00557a);
+      color: var(--white);
+      text-align: center;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    section.contact {
+      padding: 40px 20px;
+      background-color: var(--white);
+      animation: fadeInUp 1.3s ease;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-top: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: var(--secondary);
+      color: var(--white);
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #009ec1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+      animation: fadeUp 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital ODSK North Province</h1>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+      <a href="informasi.html">Informasi Dokter</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="title">
+    <h1>Tim Kami Siap Membantu</h1>
+    <p>Ada pertanyaan,saran atau keluhan mengenai pelayanan Kami. Silahkan hubungi Kami melalui formulir dibawah ini :</p>
+  </section>
+
+  <section class="contact">
+    <form action="#" method="post">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+
+      <label for="email">Alamat Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="pesan">Pesan Anda</label>
+      <textarea id="pesan" name="pesan" rows="6" required></textarea>
+
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hospital ODSK | Sistem Antrian Digital (NS)</p>
+  </footer>
+</body>
+</html>

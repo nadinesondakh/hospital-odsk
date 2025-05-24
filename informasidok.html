@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Informasi Dokter - Hospital ODSK</title>
+  <style>
+    :root {
+      --primary: #002b5b;
+      --secondary: #00b4d8;
+      --light-bg: #f8f9fa;
+      --white: #ffffff;
+      --text: #1c1c1c;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-bg);
+      color: var(--text);
+      animation: fadeInBody 1.2s ease-in;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeDown 1s ease-in;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: var(--white);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section.title {
+      padding: 40px 20px;
+      background: linear-gradient(to right, var(--primary), #00557a);
+      color: var(--white);
+      text-align: center;
+      animation: fadeInUp 1.2s ease;
+    }
+
+    section.doctor-info {
+      padding: 40px 20px;
+      background-color: var(--white);
+      animation: fadeInUp 1.3s ease;
+    }
+
+    .doctor-category {
+      margin-bottom: 30px;
+    }
+
+    .doctor-category h3 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--light-bg);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: var(--secondary);
+      color: var(--white);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--primary);
+      color: white;
+      animation: fadeUp 1.2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hospital ODSK North Province</h1>
+    <nav>
+      <a href="beranda.html">Beranda</a>
+      <a href="pendaftaran.html">Pendaftaran</a>
+      <a href="informasi.html">Informasi Dokter</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section class="title">
+    <h1>Jadwal dan Informasi Dokter</h1>
+    <p>Kami membantu Anda menemukan dokter dan jadwal praktik yang sesuai dengan kebutuhan kesehatan Anda. </p>
+  </section>
+
+  <!-- Bagian dalam <section class="doctor-info"> diubah menjadi: -->
+
+<section class="doctor-info">
+  <div class="doctor-category">
+    <h3>Obstetri & Ginekologi</h3>
+    <table>
+      <tr>
+        <th>Nama Dokter</th>
+        <th>Hari Praktik</th>
+        <th>Jam</th>
+      </tr>
+      <tr><td>dr. Misje Angsu, Sp.OG</td><td>Selasa, Sabtu</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. Agus D. N. Kaunang, Sp.OG</td><td>Rabu, Jumat</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. Flora D. Ngolo, Sp.OG</td><td>Senin</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. James A. Rarung, Sp.OG, MM</td><td>Rabu, Kamis</td><td>08.00 - 12.00</td></tr>
+    </table>
+  </div>
+
+  <div class="doctor-category">
+    <h3>Obsgyn Onkologi</h3>
+    <table>
+      <tr>
+        <th>Nama Dokter</th>
+        <th>Hari Praktik</th>
+        <th>Jam</th>
+      </tr>
+      <tr><td>dr. Frank Mitchell Marvel Wagey, Sp.OG(K) Onk</td><td>Selasa, Kamis</td><td>14.00 - 16.00</td></tr>
+    </table>
+  </div>
+
+  <div class="doctor-category">
+    <h3>Pediatri (Spesialis Anak)</h3>
+    <table>
+      <tr>
+        <th>Nama Dokter</th>
+        <th>Hari Praktik</th>
+        <th>Jam</th>
+      </tr>
+      <tr><td>dr. Stevie R. Rengkuan, Sp.A</td><td>Senin, Selasa, Jumat</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. Fransiska L. Kaihatu, Sp.A</td><td>Rabu, Jumat</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. Femmy Tambajong, Sp.A</td><td>Kamis, Sabtu</td><td>08.00 - 12.00</td></tr>
+      <tr><td>dr. Carla J. Opit, Sp.A</td><td>Kamis, Sabtu</td><td>08.00 - 12.00</td></tr>
+    </table>
+  </div>
+
+  <div class="doctor-category">
+    <h3>Interna (Penyakit Dalam)</h3>
+    <table>
+      <tr>
+        <th>Nama Dokter</th>
+        <th>Hari Praktik</th>
+        <th>Jam</th>
+      </tr>
+      <tr><td>dr. Ester O. V. Mewengkang, Sp.PD</td><td>Senin</td><td>08.00 - 11.00</td></tr>
+      <tr><td>dr. Novia Rusly, Sp.PD</td><td>Kamis, Jumat</td><td>08.00 - 11.00</td></tr>
+      <tr><td>dr. Catrien L. A. Berhandus, Sp.PD</td><td>Rabu, Sabtu</td><td>08.00 - 11.00</td></tr>
+    </table>
+  </div>
+
+  <div class="doctor-category">
+  <h3>Penyakit Dalam (HD)</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. John Walandow, Sp.PD - FINASIM</td><td>Senin - Kamis</td><td>08.00 - 11.00</td></tr>
+    <tr><td>dr. Indrajit, Sp.PD</td><td>Senin, Rabu, Jumat, Sabtu</td><td>08.00 - 11.00</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>Ginjal & Hipertensi</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>Prof. Dr. dr. Emma Moeis, Sp.PD-KGH</td><td>Senin, Rabu</td><td>08.00 - 11.00</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>Tumbuh Kembang Pediatri Sosial</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Hesti Lestari, Sp.A(K)</td><td>Selasa, Kamis</td><td>15.00 - 17.00</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>Mata</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Novanita Satolom, Sp.M</td><td>Senin, Kamis, Sabtu</td><td>08.00 - 12.00</td></tr>
+    <tr><td>dr. Vincent Armando J. Rooroh, Sp.M</td><td>Jumat, Sabtu</td><td>08.00 - 12.00</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>Jantung dan Pembuluh Darah</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Andre Awaloei, Sp.JP(K)</td><td>Selasa</td><td>09.00 - 11.00</td></tr>
+    <tr><td>dr. Andre Awaloei, Sp.JP(K)</td><td>Kamis</td><td>08.00 - 12.00</td></tr>
+  </table>
+</div>
+<div class="doctor-category">
+  <h3>Gizi Klinik</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Ester Musa, M.Gizi, Sp.GK</td><td>Selasa, Rabu</td><td>17.30 - 18.30</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>THT-KL</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Ronald Frans, Sp.THT-KL</td><td>Selasa, Kamis</td><td>14.00 - 15.30</td></tr>
+  </table>
+</div>
+
+<div class="doctor-category">
+  <h3>Neurologi</h3>
+  <table>
+    <tr>
+      <th>Nama Dokter</th>
+      <th>Hari Praktik</th>
+      <th>Jam</th>
+    </tr>
+    <tr><td>dr. Lenny H. Matoke, Sp.S</td><td>Rabu, Jumat</td><td>08.00 - 12.00</td></tr>
+    <tr><td>dr. Moudy Lumentah, Sp.S</td><td>Selasa, Kamis</td><td>08.00 - 12.00</td></tr>
+    <tr><td>dr. Lisa Rizky Dalie, Sp.N, M.Kes</td><td>Senin, Sabtu</td><td>08.00 - 12.00</td></tr>
+  </table>
+</div>
+</section>
+    </div>
+
+    <!-- Tambah kategori lain di sini kalau mau -->
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hospital ODSK | Sistem Antrian Digital (NS)</p>
+  </footer>
+</body>
+</html>
